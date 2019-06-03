@@ -1,0 +1,145 @@
+.news-way{
+  @media (min-width: $lg) {
+    padding-left: 3.5rem;
+  }
+}
+.news-page{
+  @media (min-width: $lg) {
+    padding-left: .5rem;
+  }
+  &__title{
+    @media (min-width: $sm) {
+      @include font(24px, 700);
+      padding-top: 1.5rem;
+      color: $gray-umber;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    @media (min-width: $md){
+      @include font(14px, 700);
+      margin-bottom: -2rem;
+      text-align: left;
+      padding-left: 2.3rem;
+    }
+    @media (min-width: $lg){
+      @include font(24px, 700);
+      padding-top: 4rem;
+      padding-left: 3rem;
+    }
+  }
+}
+
+.date-block{
+  @media (min-width: $sm) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-top: .7rem;
+  }
+  &__day{
+    @media (min-width: $sm) {
+      @include font(48px);
+      color: $herbal;
+      margin-bottom: -.2rem;
+    }
+    @media (min-width: $md) {
+      @include font(36px);
+    }
+    @media (min-width: $lg) {
+      @include font(48px);
+    }
+  }
+  &__mounth{
+    @media (min-width: $sm) {
+      @include font(24px);
+      color: $signal-black;
+      padding-left: .2rem;
+      padding-right: .5rem;
+    }
+    @media (min-width: $md) {
+      @include font(18px);
+    }
+    @media (min-width: $lg) {
+      @include font(24px);
+    }
+  }
+  &__year{
+    @media (min-width: $sm) {
+      @include font(24px);
+      color: $herbal;
+    }
+    @media (min-width: $md) {
+      @include font(18px);
+    }
+    @media(min-width: $lg){
+      @include font(24px);
+    }
+  }
+}
+
+.news-page-block{
+  @media (min-width: $sm) {
+    padding-left: $gutter;
+    border-bottom: 1px solid $smoky-white;
+
+    &:last-child{
+      border-bottom: none;
+    }
+  }
+  @media(min-width: $md){
+    padding-left: 2.5rem;
+    border-bottom: none;
+  }
+
+  &__text{
+    @media (min-width: $sm) {
+      @include font(16px);
+      padding-top: 1.9rem;
+      padding-bottom: 2.6rem;
+      color: $gray-umber;
+      width: 27.5rem;
+    }
+    @media (min-width: $md) {
+      @include font(12px);
+      width: 38rem;
+    }
+    @media (min-width: $lg) {
+      @include font(16px);
+      width: 50rem;
+    }
+  }
+
+  &__bold-contnet{
+    @media (min-width: $sm) {
+      @include font(16px, 700);
+      color: $signal-black;
+      padding-bottom: 2.4rem;
+    }
+
+    @media (min-width: $md) {
+      @include font(12px, 700);
+    }
+
+    @media (min-width: $lg){
+      @include font(16px, 700);
+    }
+  }
+
+  &__link{
+    @media (min-width: $sm) {
+      @include font(16px);
+      color: $herbal;
+      padding-left: .5rem;
+      padding-right: .9rem;
+    }
+
+    @media (min-width: $md) {
+      @include font(12px);
+    }
+
+    @media (min-width: $lg) {
+      @include font(16px);
+    }
+  }
+}

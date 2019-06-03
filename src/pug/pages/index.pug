@@ -1,0 +1,32 @@
+include ../../../node_modules/bemto.pug/bemto
+include ../components/_vars
+include ../components/_mixin
+
+
++base-page
+    .about-bg
+        .container
+            .row
+                +b.about-block
+                    +b.about
+                        +e.H1.title ООО "Ростэкс"
+                        +e.P.description Уже более 10 лет специализируемся <br> на производстве лакокрасочных материалов <br> для промышленности.
+                        +e.P.description Предлагаем Вам высококачественные <br> лакокрасочные материалы собственного <br> производства.
+                    +b.about-img
+                        +e.IMG(src="img/main-img.jpg").img
+    .container
+        .row
+            +b.lkm
+                +b.lkm-grid
+                    +b.lkm-catalog-img
+                        +b.SPAN.icon._main-page
+                    +b.lkm-description
+                        +e.P.text ЛКМ ДЛЯ МЕТАЛЛОКОНСТРУКЦИЙ: в том числе для портовых и гидротехнических сооружений, судостроения, судоремонта, промышленных предприятий.
+                +b.lkm-grid
+                    +b.lkm-catalog-img
+                        +b.SPAN.icon._main-page
+                    +b.lkm-description
+                        +e.P.text ХИМИЧЕСКИ СТОЙКИЕ ЛКМ: для защиты металлоконструкций, подвергающихся воздействию кислот, щелочей, агрессивных газов и химических реагентов со сроком службы покрытия от 3 до 20 лет.
+    include ../components/_request
+    include ../components/_news
+    include ../components/_modal-window

@@ -1,0 +1,98 @@
+include ../../../node_modules/bemto.pug/bemto
+include ../components/_vars
+include ../components/_mixin
+
++base-page
+    .about-bg
+        .container
+            .row
+                +b.lkm
+                    +b.A(href="catalog.html").lkm-catalog-grid
+                        +b.lkm-catalog-img
+                            +b.SPAN.icon._dark-green
+                        +b.lkm-catalog-description
+                            +e.P.text ЛКМ ДЛЯ МЕТАЛЛОКОНСТРУКЦИЙ: в том числе для портовых и гидротехнических сооружений, судостроения, судоремонта, промышленных предприятий.
+                    +b.A(href="#").lkm-catalog-grid
+                        +b.lkm-catalog-img
+                            +b.SPAN.icon._dark-green
+                        +b.lkm-catalog-description
+                            +e.P.text ХИМИЧЕСКИ СТОЙКИЕ ЛКМ: для защиты металлоконструкций, подвергающихся воздействию кислот, щелочей, агрессивных газов и химических реагентов со сроком службы покрытия от 3 до 20 лет.
+    .container
+        .row
+            +b.way
+                +e.A(href="index.html").link Главная
+                +e.A(href="product.html").link Лкм для металлоконструкций
+    .container
+        .row
+            +b.product
+                +e.H2.title ЛКМ ДЛЯ МЕТАЛЛОКОНСТРУКЦИЙ
+                +b.catalog-grid
+                    +b.catalog-block
+                        +e.A(href="xc-436.html").link-block
+                            +b.img-block
+                                +e.IMG(src="img/icon_tara_grey.svg").gray-img
+                                +e.IMG(src="img/icon_tara_green.svg").green-img
+                            +e.P.link Эмаль ХС-436
+                    +b.catalog-block
+                        +e.A(href="#").link-block
+                            +b.img-block
+                                +e.IMG(src="img/icon_tara_grey.svg").gray-img
+                                +e.IMG(src="img/icon_tara_green.svg").green-img
+                            +e.P.link Ингибированный <br> состав ХС-500
+                    +b.catalog-block
+                        +e.A(href="#").link-block
+                            +b.img-block
+                                +e.IMG(src="img/icon_tara_grey.svg").gray-img
+                                +e.IMG(src="img/icon_tara_green.svg").green-img
+                            +e.P.link Грунт АК-070
+                    +b.catalog-block
+                        +e.A(href="#").link-block
+                            +b.img-block
+                                +e.IMG(src="img/icon_tara_grey.svg").gray-img
+                                +e.IMG(src="img/icon_tara_green.svg").green-img
+                            +e.P.link Грунт ЭП-0199
+                    +b.catalog-block
+                        +e.A(href="#").link-block
+                            +b.img-block
+                                +e.IMG(src="img/icon_tara_grey.svg").gray-img
+                                +e.IMG(src="img/icon_tara_green.svg").green-img
+                            +e.P.link Грунт ЭП-0263С
+                    +b.catalog-block
+                        +e.A(href="#").link-block
+                            +b.img-block
+                                +e.IMG(src="img/icon_tara_grey.svg").gray-img
+                                +e.IMG(src="img/icon_tara_green.svg").green-img
+                            +e.P.link Грунт ЭП-0325
+                    +b.catalog-block
+                        +e.A(href="#").link-block
+                            +b.img-block
+                                +e.IMG(src="img/icon_tara_grey.svg").gray-img
+                                +e.IMG(src="img/icon_tara_green.svg").green-img
+                            +e.P.link Грунт ЭФ-065
+                    +b.catalog-block
+                        +e.A(href="#").link-block
+                            +b.img-block
+                                +e.IMG(src="img/icon_tara_grey.svg").gray-img
+                                +e.IMG(src="img/icon_tara_green.svg").green-img
+                            +e.P.link Эмаль СП-1266
+                    +b.catalog-block
+                        +e.A(href="#").link-block
+                            +b.img-block
+                                +e.IMG(src="img/icon_tara_grey.svg").gray-img
+                                +e.IMG(src="img/icon_tara_green.svg").green-img
+                            +e.P.link Эмаль ЭП-439С
+                    +b.catalog-block
+                        +e.A(href="#").link-block
+                            +b.img-block
+                                +e.IMG(src="img/icon_tara_grey.svg").gray-img
+                                +e.IMG(src="img/icon_tara_green.svg").green-img
+                            +e.P.link Эмаль ЭП-46У
+                    +b.catalog-block
+                        +e.A(href="#").link-block
+                            +b.img-block
+                                +e.IMG(src="img/icon_tara_grey.svg").gray-img
+                                +e.IMG(src="img/icon_tara_green.svg").green-img
+                            +e.P.link Шпатлевка <br> ЭП-0010
+    include ../components/_request
+    include ../components/_news
+include ../components/_modal-window

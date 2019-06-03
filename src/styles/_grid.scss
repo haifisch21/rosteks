@@ -1,0 +1,18 @@
+.container {
+  padding-right: $gutter;
+  padding-left: $gutter;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: $site-width;
+}
+
+.row {
+  margin-left: -$gutter;
+  margin-right: -$gutter;
+
+  &_flex{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+

@@ -1,0 +1,62 @@
+{
+  "name": "rosteks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/freewayspb/rosteks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/freewayspb/rosteks/issues"
+  },
+  "dependencies": {
+    "bemto.pug": "git://github.com/kizu/bemto.git",
+    "normalize.css": "^8.0.1",
+    "tabed": "^0.7.3",
+    "tabled": "^0.3.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "autoprefixer": "^9.4.7",
+    "browser-sync": "^2.26.3",
+    "clean-css-cli": "^4.2.1",
+    "concat": "^1.0.3",
+    "css-mqpacker": "^7.0.0",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-debug": "^4.0.0",
+    "gulp-html-prettify": "0.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "imagemin-cli": "^4.0.0",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^5.2.0",
+    "postcss-css-variables": "^0.11.0",
+    "postcss-nested": "^4.1.1",
+    "postcss-pxtorem": "^4.0.1",
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6",
+    "uglify-js": "^3.4.9"
+  }
+}

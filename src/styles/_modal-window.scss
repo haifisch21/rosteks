@@ -1,0 +1,84 @@
+/* Стили для подложки */
+
+.overlay {
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  opacity: 0.6;
+  z-index: 20;
+}
+
+
+.modal {
+  visibility: hidden;
+
+  @media (min-width: $sm) {
+    width: 36rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    top: 50%;
+    background-color: $white;
+    transform: translate(-50%, -50%);
+    border: 1px solid $black;
+    z-index: 30;
+  }
+
+  @media (min-width: $md) {
+    width: 52.2rem;
+  }
+
+  &__title{
+    @include font(16px);
+    color: $signal-black;
+    text-align: center;
+    padding-top: 2.6rem;
+    padding-bottom: 1.6rem;
+
+    @media (min-width:$sm) {
+      padding-left: .5rem;
+      padding-right: .5rem;
+    }
+
+    @media (min-width:$md) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__text-area{
+    @include font(16px);
+    text-align: center;
+    height: 4.5rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: $dark-gray;
+    outline: none;
+    border: 1px solid $dark-gray;
+  }
+
+  &__btn{
+    @include font(16px);
+    color: $white;
+    background-color: $herbal;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border: 1px solid $dark-gray;
+    padding-top: 1.7rem;
+    padding-bottom: 1.7rem;
+    cursor: pointer;
+    margin-bottom: 3.8rem;
+  }
+
+  .modal.active,
+  .overlay.active {
+
+    visibility: visible;
+  }
+}

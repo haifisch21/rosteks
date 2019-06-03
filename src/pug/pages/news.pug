@@ -1,0 +1,47 @@
+include ../../../node_modules/bemto.pug/bemto
+include ../components/_vars
+include ../components/_mixin
+
++base-page
+    .container
+        .row
+            +b.way.news-way
+                +e.A(href="index.html").link Главная
+                +e.A(href="news.html").link Новости
+    .container
+        .row.news-bg
+            +b.news-page
+                +e.H2.title Новости
+                +b.HR.separator
+                +b.news-page-block
+                    +b.date-block
+                        +e.P.day 25
+                        +e.P.mounth ноября
+                        +e.P.year 2010 г.
+                    +e.P.text ВНИМАНИЕ! Частично изменились телефоны нашей организации:
+                    +e.P.bold-contnet +7 (812) 612-15-01 <br> +7 (812) 612-15-02
+                +b.HR.separator
+                +b.news-page-block
+                    +b.date-block
+                        +e.P.day 09
+                        +e.P.mounth сентября
+                        +e.P.year 2009 г.
+                    +e.P.text Рады сообщить, что ассортимент нашей продукции пополнился! теперь в нашем
+                        +e.A(href="catalog.html").link каталоге
+                        +e вы можете найти
+                +b.HR.separator
+                +b.news-page-block
+                    +b.date-block
+                        +e.P.day 16
+                        +e.P.mounth сентября
+                        +e.P.year 2008 г.
+                    +e.P.text Дизайн нашего сайта изменился. Надеемся, что он стал еще более удобным и полезным для Вас!
+                +b.HR.separator
+                +b.news-page-block
+                    +b.date-block
+                        +e.P.day 16
+                        +e.P.mounth июня
+                        +e.P.year 2008 г.
+                    +e.P.text Изменился адрес электронной почты. Ждем Ваших писем по адресу:
+                    +e.P.bold-contnet info.rosteks@yahoo.com
+    include ../components/_more-news

@@ -1,0 +1,41 @@
+include ../../../node_modules/bemto.pug/bemto
+include ../components/_vars
+
++b.HEADER.header
+                +e.container
+                    +b.menu(id="check-menu")
+                        ul.menu__burger
+                            +e.burger-line.first
+                            +e.burger-line.second
+                            +e.burger-line.third
+                            +e.burger-line.fourth
+                    +b.A(href='/').header-logo
+                        +e.IMG(src="/img/logo.svg").img
+                    +b.header-contacts
+                        +e.item_address
+                            +e.IMG(src="/img/icon_place.svg").img_geo
+                            +e.P.text_address г. Санкт-Петербург, ул. Коммуны, 67
+                        +e.item_mail
+                            +e.IMG(src="/img/icon_mail.svg").img_mail
+                            +e.A(href='mailto:info.rosteks@yahoo.com').text._mail._link info.rosteks@yahoo.com
+                        +e.item_phones
+                            +e.IMG(src="/img/icon_phone.svg").img._phone
+                            +e.phone-wrapper
+                                +e.A(href='tel:+78125277214').text._link._phone +7 (812) 527-72-14
+                                +e.A(href='tel:+78126121501').text._link._phone +7 (812) 612-15-01
+                                +e.A(href='tel:+78126121502').text._link._phone +7 (812) 612-15-02
+                    +b.A(href="#").map
+                        +e.IMG(src="/img/icon_place.svg").img
+.header-bg
+    .container
+        .row
+            +b.navigation-block
+                +b.NAV.navigation
+                    each item in navMenu
+                        +e.A(href=" " + item.link).link.link-header
+                            +e.P.title=item.title
+                +b.search
+                    +b.FORM.search-form
+                        +e.INPUT(type="search" placeholder="Поиск").area
+                        +e.BUTTON.search-btn
+                            +e.IMG(src="img/icon_search.svg").img-btn

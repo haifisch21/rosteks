@@ -1,0 +1,200 @@
+.lkm-catalog-grid {
+  @media (min-width: $sm) {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    text-decoration: none;
+  }
+  @media (min-width: $md) {
+    justify-content: space-around;
+    margin-left: -4rem;
+    margin-top: 1.6rem;
+
+    &:last-child{
+      margin-left: -7rem;
+    }
+  }
+  @media (min-width: $lg) {
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.icon_dark-green:before {
+  @media (min-width: $sm) {
+    content: "\e900";
+    color: $very-dark-lemon-green;
+    font-size: 4.5rem;
+  }
+  @media (min-width: $md) {
+    font-size: 5.5rem;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 7rem;
+  }
+}
+
+
+.lkm-catalog-description {
+  &__text {
+    @media (min-width: $sm) {
+      @include font(12px);
+      padding-left: 1rem;
+      color: $white;
+      line-height: 1.2;
+      width: 26.5rem;
+
+      &:first-child {
+        padding-bottom: 1.5rem;
+      }
+    }
+    @media (min-width: $md) {
+      padding-left: 2rem;
+    }
+
+    @media (min-width: $lg) {
+      @include font(12px);
+      width: 30rem;
+      line-height: 1.2;
+    }
+  }
+}
+
+.way {
+  @media (min-width: $sm) {
+    padding-top: 1rem;
+    padding-left: $gutter;
+    display: none;
+  }
+  @media (min-width: $md) {
+    display: flex;
+    padding-left: 2.5rem;
+  }
+  @media (min-width: $lg) {
+    padding-left: 4.2rem;
+    padding-top: 1.8rem;
+  }
+  &__link {
+    @media (min-width: $sm) {
+      @include font(10px);
+      color: $herbal;
+      text-decoration: none;
+    }
+
+    @media(min-width: $lg) {
+      @include font(14px);
+    }
+  }
+  &__link:after {
+    content: ">";
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+  &__link:last-child::after {
+    content: none;
+  }
+}
+
+.product {
+  @media (min-width: $sm) {
+    padding-top: 3.1rem;
+  }
+  @media (min-width: $md) {
+    padding-top: 2rem;
+  }
+  &__title {
+    @media (min-width: $sm) {
+      @include font(18px, 700);
+      color: $signal-black;
+      padding-bottom: 3.7rem;
+      text-align: center;
+    }
+    @media (min-width: $md) {
+      @include font(18px, 700);
+      text-align: left;
+      margin-left: 2.5rem;
+    }
+    @media (min-width: $lg) {
+      @include font(24px, 700);
+      text-align: left;
+      margin-left: 4.4rem;
+    }
+  }
+}
+
+.catalog-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.catalog-block {
+  @media (min-width: $sm) {
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  @media (min-width: $md) {
+    width: 20%;
+    justify-content: flex-start;
+    cursor: pointer;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  @media (min-width: $lg) {
+    margin-bottom: 2rem;
+  }
+
+  &__link-block{
+    text-decoration: none;
+  }
+
+  &__link{
+    @media (min-width: $sm) {
+      @include font(18px);
+      display: flex;
+      color: $signal-black;
+      text-decoration: none;
+      text-align: center;
+      flex-direction: column;
+      width: 50%;
+      padding-bottom: 2rem;
+      margin: 0 auto;
+      padding-top: 1.5rem;
+    }
+    @media (min-width: $md) {
+      @include font(14px);
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+      width: 100%;
+    }
+    @media (min-width: $lg) {
+      @include font(18px);
+    }
+  }
+}
+
+.img-block{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  &__green-img{
+    display: none;
+  }
+}
+
+.catalog-block:hover .catalog-block__link{
+  color: $herbal;
+}
+.catalog-block:hover .img-block__green-img{
+  display: flex;
+}
+
+.catalog-block:hover .img-block__gray-img{
+  display: none;
+}
+

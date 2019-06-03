@@ -1,0 +1,25 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+// wtf? some styles for reset browser margin/padding
+@import "reset";
+// grid styles
+@import "grid";
+// main page styles
+@import "main";
+// header styles
+@import "header";
+// footer styles
+@import "footer";
+// catalog page styles
+@import "catalog";
+// news page styles
+@import "news";
+// wtf ?
+@import "more-news";
+// catalog item styles
+@import "xc-436";
+// modal window styles
+@import "modal-window";
+// svg-fonts
+@import "svg-fonts";

@@ -1,0 +1,35 @@
+include ../../../node_modules/bemto.pug/bemto
+include ../components/_vars
+
+.footer-bg
+    .container
+        .row
+            .footer-block
+                +b.navigation-block.footer-navigation
+                    +b.NAV.navigation.footer-nav
+                        each item in navMenu
+                            +e.A(href=" " + item.link).link.footer-link
+                                +e.P.title=item.title
+                    +b.search.footer-search
+                        +b.FORM.search-form
+                            +e.INPUT(type="search" placeholder="Поиск").area
+                            +e.BUTTON.search-btn
+                                +e.IMG(src="img/search.png").img-btn
+                +b.footer-contact
+                    +b.contact-block
+                        +b.address-icon._footer
+                            +e.IMG(src="img/icon_place.svg").img.footer-map
+                        +e.P.text._address г. Санкт-Петербург, ул. Коммуны, 67
+                    +b.contact-block
+                        +b.email-icon._footer
+                            +e.IMG(src="img/icon_mail.svg").img.footer-mail
+                        +e.P.text._email info.rosteks@yahoo.com
+                    +b.contact-block._tel
+                        +b.telephone-icon._footer
+                            +e.IMG(src="img/icon_phone.svg").img.footer-phone
+                        +b.telephone-block
+                            +e.P.number.hidden-tablet +7 (812) 527-72-14
+                            +e.P.number +7 (812) 612-15-01
+                            +e.P.number +7 (812) 612-15-02
+                +b.copyright
+                    +e.text © 2018 ООО «Ростэкс»

@@ -1,0 +1,127 @@
+include ../../../node_modules/bemto.pug/bemto
+include ../components/_vars
+include ../components/_mixin
+
++base-page
+    .container
+        .row
+            +b.way._mobile
+                +e.A(href="index.html").link Главная
+                +e.A(href="catalog.html").link Лкм для металлоконструкций
+                +e.A(href="xc-436.html").link Эмаль ХС-436
+    .container
+        .row
+            +b.product-page
+                +e.H2.title Эмаль ХС-436
+                +b.product-block
+                    +b.description-img
+                        +e.IMG(src="img/alkidnaya-kraska-plyusy-i-minusy-54.jpg").img
+                    +b.description-content
+                        +e.P.color Цвет:
+                        +b.colors-grid
+                            +b.colors
+                                +e.btn._red
+                            +b.colors
+                                +e.btn._green
+                            +b.colors
+                                +e.btn._black
+                        +e.P.subtitle Область применения:
+                        +e.P.content Для защиты от коррозии района переменной ватерлинии, подводной и надводной части  корпусов судов, включая суда ледового плавания, а также противокоррозионной защиты стальных поверхностей, эксплуатирующихся в атмосферных условиях.
+                        +e.P.subtitle Срок службы покрытия:
+                        +e.P.content Для района ПВЛ не менее 2 лет.<br> Для подводной части не менее 4 лет.
+                        +b.only-tablet
+                            +e.BUTTON(type="button" id="open-modal").btn ОСТАВИТЬ ЗАЯВКУ
+                            +e.description Оставьте заявку и наш специалист свяжется с вами <br> для уточнения деталей
+    .container
+        .row
+            +b.accordion-block
+                +b.UL(data-accordion="open").accordion
+                    +e.LI.list
+                        +b.accordion-header ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
+                        +b.accordion-body._specifications
+                            +b.accordion-container
+                                +b.accordion-line
+                                    +e.P.name Количество упаковок
+                                    +e.P.value двухупаковочная
+                                +b.accordion-line
+                                    +e.P.name Массовая доля нелетучих <br> веществ основы, %
+                                    +e.P.value 40-45
+                                +b.accordion-line
+                                    +e.P.name Условная вязкость по B3-246 с диаметром <br> сопла 6 мм при 20°С, с, не менее
+                                    +e.P.value 40-45
+                                +b.accordion-line
+                                    +e.P.name Время высыхания до степени 3 при 20°С, ч, <br> не более
+                                    +e.P.value 40-45
+                                +b.accordion-line
+                                    +e.P.name Эластичность пленки при изгибе, мм,<br> не более
+                                    +e.P.value 40-45
+                                +b.accordion-line
+                                    +e.P.name Прочность плёнки при ударе, см,<br> не менее
+                                    +e.P.value 40-45
+                                +b.accordion-line
+                                    +e.P.name Адгезия пленки, баллы, не более
+                                    +e.P.value 40-45
+                                +b.accordion-line
+                                    +e.P.name Стойкость пленки к статическому <br> воздействию бензина, минерального масла...
+                                    +e.P.value 40-45
+                                +b.accordion-line
+                                    +e.P.name Стойкость пленки к истиранию, мкм/ч,<br> не более
+                                    +e.P.value 40-45
+                    +e.LI.list
+                        +b.accordion-header СВОЙСТВА
+                        +b.accordion-body
+                    +e.LI.list
+                        +b.accordion-header РЕКОМЕНДАЦИИ ПО ПРИМЕНЕНИЮ
+                        +b.accordion-body
+    .container
+        .row
+            +b.tabed
+                +b(data-title="Технические характеристики:").tab
+                    +b.tab-grid
+                        +b.tab-line
+                            +e.P.name Количество упаковок
+                            +e.P.value двухупаковочная
+                        +b.tab-line
+                            +e.P.name Массовая доля нелетучих веществ основы, %
+                            +e.P.value 40-45
+                        +b.tab-line
+                            +e.P.name Условная вязкость по B3-246 с диаметром сопла 6 мм при 20°С, с, не менее
+                            +e.P.value 40-45
+                        +b.tab-line
+                            +e.P.name Время высыхания до степени 3 при 20°С, ч, не более
+                            +e.P.value 40-45
+                        +b.tab-line
+                            +e.P.name Эластичность пленки при изгибе, мм,не более
+                            +e.P.value 40-45
+                        +b.tab-line
+                            +e.P.name Прочность плёнки при ударе, см, не менее
+                            +e.P.value 40-45
+                        +b.tab-line
+                            +e.P.name Адгезия пленки, баллы, не более
+                            +e.P.value 40-45
+                        +b.tab-line
+                            +e.P.name Стойкость пленки к статическому  воздействию бензина, минерального масла, <br> 3% раствора NaCl, при 20°С, ч, не менее
+                            +e.P.value 40-45
+                        +b.tab-line
+                            +e.P.name Стойкость пленки к истиранию, мкм/ч, не более
+                            +e.P.value 40-45
+                +b(data-title="Свойства").tab
+                +b(data-title="Рекомендации по применению:").tab
+    .container
+        .row
+            +b.instruction
+                +e.P.title Подготовка эмали: <br>
+                +e.P.text Смешать основу эмали с отвердителем в массовом соотношении: 100:2 отвердителя АФ-2 или 100:2,5 отвердителя ДТБ-2 по массе, тщательно перемешать и выдержать в течение 20-30 мин.
+                +e.P.text При необходимости разбавить растворителем в количестве не более 10 % от массы эмали.
+                +e.P.text Жизнеспособность готовой эмали при температуре от -15°С до 35°С не менее 24 часов.
+            +b.term
+                +e.P.title Гарантированный срок хранения:
+                +e.P.text 12 месяцев при температуре не ниже -25°С.
+
+
+
+
+    .only-mobile
+        include ../components/_request
+        include ../components/_news
+include ../components/_modal-window

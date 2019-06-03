@@ -1,0 +1,51 @@
+.news-grid_no-padding{
+  padding-left: 0;
+}
+.news-page-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (min-width: $sm) {
+    padding: 0;
+    margin-bottom: -1.5rem;
+  }
+  @media (min-width: $lg) {
+    display: flex;
+    z-index: 5;
+    background-color: $white;
+    padding-bottom: 5rem;
+    width: 1010px;
+  }
+
+  &__btn {
+    @media (min-width: $sm) {
+      @include font(18px);
+      width: 100%;
+      padding-top: $gutter;
+      padding-bottom: $gutter;
+      border: none;
+      background-color: $herbal;
+      color: $white;
+      outline: none;
+      cursor: pointer;
+    }
+
+    @media (min-width: $md) and (max-width: 1009px){
+      @include font(14px);
+      width: 15.6rem;
+      cursor: pointer;
+      margin-left: 2.5rem;
+      margin-top: 9rem;
+      margin-bottom: 4.8rem;
+    }
+
+    @media (min-width: $lg) {
+      @include font(18px);
+      width: 20rem;
+      margin-top: 10rem;
+      cursor: pointer;
+      margin-left: 2.5rem;
+    }
+  }
+}
+
