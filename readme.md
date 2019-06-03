@@ -1,17 +1,17 @@
 ### Build command
-make build command for create project build in ./build folder
+make build command for create npm directory
 ```bash
-npm run build
+npm i
 ```
 
-### Watcher for development
+### GULP
 first make build, than you can run watch command for development
 command automatic rebuild:
 - SCSS to CSS
 - JS to JS with concat and uglify
 - PUG to HTML 
 ```bash
-npm run watch
+gulp
 ```
 
 #### You can use separate builder for each process
